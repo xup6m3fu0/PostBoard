@@ -30,9 +30,9 @@
       </ul>
 
       <%else%>
-      <button type="button" class="btn btn-default navbar-btn navbar-right" >
-      <%= link_to "Logout" , logout_path%>
-      </button>
+      <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to "Logout" , logout_path%></li>
+      </ul>
       <p class="navbar-text navbar-right">Hello! <%=current_user.name%> &nbsp </p>
       <%end%>
 
