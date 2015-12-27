@@ -11,9 +11,8 @@
 // about supported directives.
 //
 
-//= require dropdown.js
+//= require bootstrap
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap
 //= require_tree .
