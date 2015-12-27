@@ -1,0 +1,27 @@
+<%if session[:wrong]==1%>
+<script>
+alert("1.Name must be exist! \n2.Password must be at least 5 characters")
+</script>
+<%session[:wrong]=nil  end%>
+
+<h1 style="margin-left:6%">Register</h1>
+<div class="well col-md-6 " style="margin-left:6%">
+ 	 <p>
+ 	 	<%=form_for @user do |t|%>
+
+ 	 	<div class="wrapper" style="margin-left:30%">
+			<b>Name:</b><br/>
+			<%=t.text_field :name %><br/>
+
+			<b>Password:</b><br/>
+			<%=t.password_field :password %><br/><br/>
+
+		<p>
+
+			<%=t.submit "Register" , class:"btn btn-primary btn-lg"  %>
+			<%=link_to "Back" ,:back, class:"btn btn-primary btn-lg"  %>
+		</p>
+		</div>
+		<%end%>
+  	</p>
+</div>

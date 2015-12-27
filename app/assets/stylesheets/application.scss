@@ -12,5 +12,12 @@
  *
  *= require_tree .
  *= require_self
- @import "bootstrap" ;
  */
+@import "bootstrap" ;
+
+
+.container{
+	width: auto;
+	margin-left: 25%;
+	margin-right: 0;
+}

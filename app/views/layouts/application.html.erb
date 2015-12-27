@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>PostBoard</title>
+  <title>Dylan's PostBoard</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+  <!--nav_bar from bootstrap -->
+  <%= render 'layouts/nav_bar' %>	
+</header>
 
-<%= yield %>
+<div class="container">
+	<div class="row" >
+		<%= yield  %>
+	</div>
+</div>
+
 
 </body>
 </html>
