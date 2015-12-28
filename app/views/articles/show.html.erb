@@ -14,6 +14,7 @@
   				<!--dropdown to edit delete-->
   				<% if login? && @article.user_id==current_user.id%>
   				<td >
+  					
 					 <div class="dropdown">
 					  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					    
@@ -25,6 +26,7 @@
 					    <li><%= link_to "Delete" ,article_path(@article),method: :delete,data:{confirm:"Are you Sure?"},:style=>"color:black;text-decoration:none;"%></li>
 					  </ul>
 					</div>
+					
   				</td>
   				<%end%>
   				</tr></th>
