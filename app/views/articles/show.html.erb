@@ -58,7 +58,7 @@
 					<h3 style="color:blue">Comment:</h3>
 						<%=form_for [@article,@comment] do |t|%>
 
-						<table width="630px" >
+						<table width="auto" >
 							<td valign="middle"><%=t.text_area :content ,rows:1,cols:65 %></td>
 							<td  valign="top" >&nbsp<%=t.submit "Submit" %></td>
 						</table>
